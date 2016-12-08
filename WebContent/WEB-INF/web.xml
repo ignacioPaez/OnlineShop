@@ -34,7 +34,7 @@
   </context-param>
   <context-param>
     <param-name>mailPass</param-name>
-    <param-value>fdffgfh</param-value>
+    <param-value>fdffgfhuyuy</param-value>
   </context-param>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

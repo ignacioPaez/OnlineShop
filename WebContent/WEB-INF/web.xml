@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <context-param>
+    <param-name>adminMail</param-name>
+    <param-value>admin@example.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>adminPass</param-name>
+    <param-value>Administrador</param-value>
+  </context-param>
+  <context-param>
+    <param-name>hostMail</param-name>
+    <param-value>smtp.gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>TSLMail</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <context-param>
+    <param-name>mailPort</param-name>
+    <param-value>993</param-value>
+  </context-param>
+  <context-param>
+    <param-name>mailUser</param-name>
+    <param-value>usuario</param-value>
+  </context-param>
+  <context-param>
+    <param-name>authMail</param-name>
+    <param-value>true</param-value>
+  </context-param>
+  <context-param>
+    <param-name>mailFrom</param-name>
+    <param-value>ignaciopaez4@gmail.com</param-value>
+  </context-param>
+  <context-param>
+    <param-name>mailPass</param-name>
+    <param-value>vamosboca1945</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <display-name>TiendaOnline</display-name>
+  <description>.¿</description>
+</web-app>

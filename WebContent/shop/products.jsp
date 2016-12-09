@@ -63,7 +63,7 @@
     <div class="feat_prod_box_details">
     <table class="cart_table">
     	<tbody>
-        <tr class="cart_title"><td></td><td>Nombre</td><td>Precio</td><td>Descripci&oacute;n</td><td>Disponibilidad</td><td></td></tr>
+        <tr class="cart_title"><td></td><td>Nombre</td><td>Precio</td><td>Autor</td><td>Disponibilidad</td><td></td></tr>
         <!-- <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr> -->
         <% for (Producto prod : productos.values()){ %>
         <tr class="contentTable">
@@ -82,9 +82,9 @@
             <% if (session.getAttribute("auth") != null){ %>
             <td>
             <% if (prod.getStock() > 0){ %>
-            <a href="${pageContext.request.contextPath}/AddCarritoServlet?prod=<%= prod.getCodigo() %>&cant=1"><img src="${pageContext.request.contextPath}/images/icons/addCarro.png" alt="A&ntilde;adir al carrito" title="A&ntilde;adir producto a la cesta" /></a>
+            	<a href="${pageContext.request.contextPath}/AddCarritoServlet?prod=<%= prod.getCodigo() %>&cant=1"><img src="${pageContext.request.contextPath}/images/icons/addCarro.png" alt="A&ntilde;adir al carrito" title="A&ntilde;adir producto a la cesta" /></a>
             <% }else{ %>
-            <img src="${pageContext.request.contextPath}/images/icons/emptybox.png" alt="Producto agotado" title="Producto agotado" />
+            	<img src="${pageContext.request.contextPath}/images/icons/emptybox.png" alt="Producto agotado" title="Producto agotado" />
             <% }%>
             </td>
             <% } %>

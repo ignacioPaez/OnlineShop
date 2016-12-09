@@ -91,7 +91,7 @@ public class UpdateCartServlet extends HttpServlet {
             if (request.getParameter("buy")!= null && request.getParameter("buy").equals("preBuy")){
                 request.getRequestDispatcher("/BuyServlet").forward(request, response);
             }else{
-                response.sendRedirect("/OnlineShop/shop/buycart.jsp");
+                response.sendRedirect("/shop/buycart.jsp");
             }
         }else{
             request.setAttribute("resultados", "Carrito no encontrado");

@@ -57,7 +57,7 @@
         	<input name="repeatPass" type="password" size="25" maxlength="20" class=":same_as;pass :required :only_on_blur contact_input"/>
         	</div>
         	<div class="form_row">
-							<input name="changepass" type="submit" value="cambiar" class="register" />
+							<input name="changePass" type="submit" value="cambiar" class="register" />
 						</div>
         </form>
         </div>

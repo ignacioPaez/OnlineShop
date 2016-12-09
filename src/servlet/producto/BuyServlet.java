@@ -107,7 +107,7 @@ public class BuyServlet extends HttpServlet {
             } catch (IOException ex) {
                 request.setAttribute("resultados", "Intrusión detectada");
                 Tools.anadirMensaje(request, ex.getMessage());
-                request.getRequestDispatcher("/shop/buycart.jsp").forward(request, response);
+                request.getRequestDispatcher("/OnlineShop/shop/buycart.jsp").forward(request, response);
             }
         } else {
             request.setAttribute("resultados", "Formulario incorrecto");
@@ -124,7 +124,7 @@ public class BuyServlet extends HttpServlet {
 
         String contenido = Tools.leerArchivoClassPath("/control/plantillaCompra.html");
         contenido = contenido.replace("&LISTA", generateTableProductos(filas));
-        contenido = contenido.replace("&TOTAL", Tools.roundDouble(carro.getPrecio()) + " &euro;");
+        contenido = contenido.replace("&TOTAL", Tools.roundDouble(carro.getPrecio()) + " $;");
         contenido = contenido.replace("&NAME", name);
         contenido = contenido.replace("&EMAIL", email);
         contenido = contenido.replace("&DIR", dir);
@@ -168,11 +168,11 @@ public class BuyServlet extends HttpServlet {
 
         sb.append("<td>");
         sb.append(Tools.roundDouble(prod.getPrecio()));
-        sb.append(" &euro;</td>");
+        sb.append(" $</td>");
 
         sb.append("<td>");
         sb.append(Tools.roundDouble(prod.getPrecio() * unidades));
-        sb.append(" &euro;</td>");
+        sb.append(" $</td>");
 
         sb.append("</tr>");
         sb.append("\n");

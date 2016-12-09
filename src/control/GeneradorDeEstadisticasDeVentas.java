@@ -30,7 +30,7 @@ ArrayList <Carrito> historial = new ArrayList<Carrito>();
     
     public boolean graficoGanadoPorDia (String ruta){
         return saveJPG(crearModeloSem(mediaVendidoDiaSem()), ruta, "Media por compra en los días de la semana",
-                "Día", "Media (€)");
+                "Día", "Media ($)");
     }
     
     public boolean porcentajeProductosVendidosMes (String ruta){
@@ -90,43 +90,43 @@ ArrayList <Carrito> historial = new ArrayList<Carrito>();
     
     private DefaultCategoryDataset crearModeloMes (double [] datos){
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.setValue(datos[0], "Enero", "Ene");
-        dataset.setValue(datos[1], "Febrero", "Feb");
-        dataset.setValue(datos[2], "Marzo", "Mar");
-        dataset.setValue(datos[3], "Abril", "Abr");
-        dataset.setValue(datos[4], "Mayo", "May");
-        dataset.setValue(datos[5], "Junio", "Jun");
-        dataset.setValue(datos[6], "Julio", "Jul");
-        dataset.setValue(datos[7], "Agosto", "Ago");
-        dataset.setValue(datos[8], "Septiembre", "Sept");
-        dataset.setValue(datos[9], "Octubre", "Oct");
-        dataset.setValue(datos[10], "Noviembre", "Nov");
-        dataset.setValue(datos[11], "Diciembre", "Dic");
+        dataset.setValue(datos[1], "Enero", "Ene");
+        dataset.setValue(datos[2], "Febrero", "Feb");
+        dataset.setValue(datos[3], "Marzo", "Mar");
+        dataset.setValue(datos[4], "Abril", "Abr");
+        dataset.setValue(datos[5], "Mayo", "May");
+        dataset.setValue(datos[6], "Junio", "Jun");
+        dataset.setValue(datos[7], "Julio", "Jul");
+        dataset.setValue(datos[8], "Agosto", "Ago");
+        dataset.setValue(datos[9], "Septiembre", "Sept");
+        dataset.setValue(datos[10], "Octubre", "Oct");
+        dataset.setValue(datos[11], "Noviembre", "Nov");
+        dataset.setValue(datos[0], "Diciembre", "Dic");
         
         return dataset;
     }
     
     private DefaultCategoryDataset crearModeloSem (int [] datos){
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.setValue(datos[2], "Lunes", "L");
-        dataset.setValue(datos[3], "Martes", "M");
-        dataset.setValue(datos[4], "Miércoles", "X");
-        dataset.setValue(datos[5], "Jueves", "J");
-        dataset.setValue(datos[6], "Viernes", "V");
-        dataset.setValue(datos[7], "Sábado", "S");
-        dataset.setValue(datos[1], "Domingo", "D");
+        dataset.setValue(datos[5], "Lunes", "L");
+        dataset.setValue(datos[6], "Martes", "M");
+        dataset.setValue(datos[7], "Miércoles", "X");
+        dataset.setValue(datos[1], "Jueves", "J");
+        dataset.setValue(datos[2], "Viernes", "V");
+        dataset.setValue(datos[3], "Sábado", "S");
+        dataset.setValue(datos[4], "Domingo", "D");
         return dataset;
     }
     
     private DefaultCategoryDataset crearModeloSem (double [] datos){
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.setValue(datos[2], "Lunes", "L");
-        dataset.setValue(datos[3], "Martes", "M");
-        dataset.setValue(datos[4], "Miércoles", "X");
-        dataset.setValue(datos[5], "Jueves", "J");
-        dataset.setValue(datos[6], "Viernes", "V");
-        dataset.setValue(datos[7], "Sábado", "S");
-        dataset.setValue(datos[1], "Domingo", "D");
+        dataset.setValue(datos[5], "Lunes", "L");
+        dataset.setValue(datos[6], "Martes", "M");
+        dataset.setValue(datos[7], "Miércoles", "X");
+        dataset.setValue(datos[1], "Jueves", "J");
+        dataset.setValue(datos[2], "Viernes", "V");
+        dataset.setValue(datos[3], "Sábado", "S");
+        dataset.setValue(datos[4], "Domingo", "D");
         
         return dataset;
     }

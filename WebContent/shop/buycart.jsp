@@ -116,9 +116,10 @@
 
             <% } %>
             <input type="hidden" name="buy" value="preBuy" />
-            <input type="image" name="creditCard" src="${pageContext.request.contextPath}/images/icons/creditcard.png" title="Pago con tarjeta" style="margin: 30px; height:90px; weight:80px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="image" name="reembolso" src="${pageContext.request.contextPath}/images/icons/contrareembolso.png" title="Pago contra reembolso" style="margin: 30px; height:90px; weight:80px;" />&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="image" name="transfer" src="${pageContext.request.contextPath}/images/icons/banktransfer.png" title="Pago por transferencia bancaria" style="margin: 30px; height:90px; weight:80px;" />
+            <input type="image" name="creditCard" src="${pageContext.request.contextPath}/images/icons/creditcard.png" title="Pago con tarjeta" style="margin: 20px 0px; height:80px; weight:80px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="image" name="reembolso" src="${pageContext.request.contextPath}/images/icons/contrareembolso.png" title="Pago contra reembolso" style="margin: 20px 0px; height:80px; weight:80px;" />&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="image" name="transfer" src="${pageContext.request.contextPath}/images/icons/banktransfer.png" title="Pago por transferencia bancaria" style="margin: 20px 0px; height:80px; weight:80px;" />
+
         </form>
         <!-- </p> -->
 

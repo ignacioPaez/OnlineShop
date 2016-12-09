@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.Map;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +19,7 @@ import dao.UsuarioDao;
  * Servlet implementation class ChangePassServlet
  */
 @WebServlet("/ChangePassServlet")
+@MultipartConfig
 public class ChangePassServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

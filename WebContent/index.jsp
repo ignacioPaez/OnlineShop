@@ -24,23 +24,26 @@
                 <!-- Contenido de la columna derecha -->
                 <div id="contentRight">
 
+                    <div class="title">
+							<span class="title_icon"><img
+							src="${pageContext.request.contextPath}/images/template/bullet3.gif"
+						alt="" title=""></span> Book Store
+					</div> 
                     <p>
-                        <span class="header">Tienda Online</span>
-                        Hemos desarrollado esta aplicaci&oacute;n online para que sus compras sean lo m&aacute;s c&oacute;modas posibles. En caso de que tenga alg&uacute;n problema con el 
-                        servicio no dude en ponerse en contacto con nostros y haremos todo lo que este en nuestra mano para solucionar el problema lo antes 
+                        Bienvenidos a Bookstore, la aplicaci&oacute;n que le permite comprar sus libros preferidos. En caso de que tenga alg&uacute;n problema con el 
+                        servicio o quiere darse de baja no dude en ponerse en contacto a consulta@bookstore.com y haremos todo lo que este en nuestra mano para solucionar el problema lo antes 
                         posible
                     </p>
                     
                     <p>
-                        <span class="header" >Sobre las compras</span>
-                        Puede <a href="./login.jsp">registrarse</a> en la tienda o puede comprar sin un registro previo.
+                        Puede <a href="./login.jsp">registrarse</a> en la tienda o puede consultar los libros disponibles.
                         Usando la opci&oacute;n del registro previo solo tendr&aacute; que introducir una vez los datos personales. El resto
                         de las veces lo &uacute;nico que tendr&aacute; que hacer es elegir la forma de pago con que dese abonar el precio de la compra.
                     </p>
 
                     <p>
                         Puede llenar su carrito de la compra y nosotros lo guardaremos por usted hasta que decida comprarlo, su carrito de la compra 
-                        ser&aacute; conservado de aunque cierre la sesi&oacute;n. Cuando usted cierre la sesi&oacute;n con un carrito lleno sin haberlo confirmado guardaremos 
+                        ser&aacute; conservado aunque cierre la sesi&oacute;n. Cuando usted cierre la sesi&oacute;n con un carrito lleno sin haberlo confirmado guardaremos 
                         su carrito y podr&aacute; verlo lleno la pr&oacute;xima vez que inicie sesi&oacute;n.
                     </p>
 

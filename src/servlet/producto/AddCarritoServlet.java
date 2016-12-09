@@ -62,7 +62,7 @@ public class AddCarritoServlet extends HttpServlet {
 			    if ((cantidadNueva + cantidadActual) > prod.getStock()) {
 			        request.setAttribute("resultados", "No hay suficiente Stock");
 			        Tools.anadirMensaje(request, "No hay stock suficiente del producto seleccionado");
-			        request.getRequestDispatcher("/OnlineShop/shop/products.jsp").forward(request, response);
+			        request.getRequestDispatcher("/shop/products.jsp").forward(request, response);
 			        return;
 			    }
 			    if (carro == null) {
@@ -104,7 +104,7 @@ public class AddCarritoServlet extends HttpServlet {
 			    if ((cantidadNueva + cantidadActual) > prod.getStock()) {
 			        request.setAttribute("resultados", "No hay suficiente Stock");
 			        Tools.anadirMensaje(request, "No hay stock suficiente del producto seleccionado");
-			        request.getRequestDispatcher("/OnlineShop/shop/products.jsp").forward(request, response);
+			        request.getRequestDispatcher("/shop/products.jsp").forward(request, response);
 			        return;
 			    }
 			    if (carro == null) {
@@ -119,7 +119,7 @@ public class AddCarritoServlet extends HttpServlet {
 			    Tools.anadirMensaje(request, "El producto elegido no existe");
 			}
         }
-        request.getRequestDispatcher("/OnlineShop/shop/products.jsp").forward(request, response);
+        request.getRequestDispatcher("/shop/products.jsp").forward(request, response);
 	
 	}
 	

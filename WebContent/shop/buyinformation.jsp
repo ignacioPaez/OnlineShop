@@ -50,10 +50,11 @@
         <% } else if (carro.getArticulos().size() == 0){ %>
             No se han a&ntilde;adido productos a la cesta de la compra
         <% } else { %>
-        <p>
-            <table border="0" align="center" width="90%">
-            <tr class="headerTable" > <td>Producto</td> <td>Unidades</td> <td>Precio Unidad</td> <td>Precio Total</td> </tr>
-            <tr> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td> </tr>
+
+        	<div class="feat_prod_box_details">
+            <table class="cart_table">
+            <tbody>
+           <tr class="cart_title"><td>Producto</td> <td>Unidades</td> <td>Precio Unidad</td> <td>Precio Total</td> </tr>
            <% Iterator <String> iteradorCarro = carro.getArticulos().keySet().iterator();
             while (iteradorCarro.hasNext()){
                 String cod = iteradorCarro.next();
@@ -62,14 +63,18 @@
                 <tr class="contentTable" >
                     <td><%= prod.getNombre() %></td>
                     <td><%= cant %></td>
-                    <td><%= Tools.roundDouble(prod.getPrecio()) %> &euro;</td>
-                    <td><%= Tools.roundDouble(prod.getPrecio() * cant) %> &euro;</td>
+                    <td><%= Tools.roundDouble(prod.getPrecio()) %> $</td>
+                    <td><%= Tools.roundDouble(prod.getPrecio() * cant) %> $</td>
                 </tr>
             <% } %>
-        </table>
-        </p>
+            	<tr>
+               			<td colspan="3" class="cart_total"><span class="red">PRECIO TOTAL:</span></td>
+                		<td> <%= Tools.roundDouble(carro.getPrecio()) %> $</td>                
+            	</tr>
+            </tbody>
+        	</table>
+        	</div>
         <br />
-        <p><b>Precio Total:</b> <%= Tools.roundDouble(carro.getPrecio()) %> &euro;</p>
         <br />
 
         <% } %>
@@ -77,7 +82,7 @@
     </p>
 
       <!-- Crea las esquinas redondeadas abajo -->
-      <img src="./images/template/corner_sub_bl.gif" alt="bottom corner" class="vBottom"/>
+     <!--  <img src="./images/template/corner_sub_bl.gif" alt="bottom corner" class="vBottom"/> -->
 
     </div>
 </div>

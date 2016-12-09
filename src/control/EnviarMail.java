@@ -30,7 +30,7 @@ public class EnviarMail {
 	        prop.setProperty("mail.smtp.auth", "true");
 	        //prop.setProperty("mail.from", context.getInitParameter("mailFrom"));  
 	        config = prop;
-	        pass = "ytytytytyrttrt";
+	        pass = "fgfgfgf";
 	    }
 	    
 	    public Authenticator getAuth (){

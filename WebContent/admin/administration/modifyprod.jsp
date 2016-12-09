@@ -88,7 +88,7 @@
                         <input type="text" name="price" maxlength="10" class=":number :required :only_on_blur" <%= precio%> /><br /><br />
                         <b>Unidades en stock</b> <br />
                         <input type="text" name="stock" maxlength="5" class=":digits :required :only_on_blur" <%= stock%> /><br /><br />
-                        <b>Descripci&oacute;n corta</b> <br />
+                        <b>Autor</b> <br />
                         <input type="text" name="desc" maxlength="100" class=":required :only_on_blur" <%= descripcion%> /><br /><br />
                         Imagen del producto (opcional)<br />
                         <% if (Tools.existeElFichero(request.getServletContext().getRealPath("/images/" + codigo)) == true) {%>

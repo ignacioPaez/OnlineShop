@@ -50,11 +50,11 @@
 	<%
 		if (carro.getArticulos().size() == 0) {
 	%>
-	<center>
+	<left>
 		<a href="${pageContext.request.contextPath}/shop/cart.jsp"><img
 			src="${pageContext.request.contextPath}/images/icons/cartEmpty.png"
 			alt="Carrito" title="Ir al carrito (carrito vac&iacute;o)" /></a>
-	</center>
+	</left>
 	<%
 		} else {
 	%>

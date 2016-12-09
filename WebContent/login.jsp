@@ -103,6 +103,7 @@
 				
 				</div>
 
+				<a name="posregistro"></a>
 				<div class="title">
 					<span class="title_icon"><img
 						src="${pageContext.request.contextPath}/images/template/bullet3.gif"

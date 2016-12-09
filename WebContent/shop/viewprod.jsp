@@ -150,11 +150,19 @@
 									<strong>AUTOR:</strong> <span class="red"><%=prod.getDesc()%>
 									</span>
 								</div>
+								<% if (session.getAttribute("auth") != null){ %>
 								<a
 									href="${pageContext.request.contextPath}/AddCarritoServlet?prod=<%= prod.getCodigo() %>&cant=1"
 									class="more"><img
 									src="${pageContext.request.contextPath}/images/template/order_now.gif"
-									alt="" title="" border="0"></a>
+									alt="" title="" border="0"></a> 
+									<% } else { %>
+									<a
+									href="${pageContext.request.contextPath}/login.jsp">Registrese para comprar<img
+									src="${pageContext.request.contextPath}/images/template/order_now.gif"
+									alt="" title="" border="0"></a> <% } %>
+									
+									
 								<div class="clear"></div>
 							</div>
 							<div class="box_bottom"></div>
